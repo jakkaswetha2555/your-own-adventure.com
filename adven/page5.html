@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Your Own Adventure</title>
+
+    <style>
+        body {
+    text-align: center;
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 25%, #8B4513 50%, #D2691E 75%, #FF8C00 100%);
+    background-size: 400% 400%;
+    animation: gradientShift 8s ease infinite;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    line-height: 1.8;
+    word-spacing: 2px;
+    letter-spacing: 1px;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px 0;
+}
+
+@keyframes gradientShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    background: linear-gradient(145deg, #fef8f2 0%, #fff5e6 50%, #ffe4b5 100%);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    border: 2px solid rgba(255, 215, 0, 0.3);
+}
+
+.box {
+    background: linear-gradient(135deg, #ffffff 0%, #f8f8ff 25%, #fff8dc 50%, #faf0e6 75%, #fff5ee 100%);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.8);
+    line-height: 2;
+    border: 1px solid rgba(255, 215, 0, 0.2);
+    position: relative;
+    overflow: hidden;
+}
+
+.box::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+    animation: shimmer 3s infinite;
+}
+
+@keyframes shimmer {
+    0% { left: -100%; }
+    100% { left: 100%; }
+}
+
+a{
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #8B4513;
+    padding: 10px 20px;
+    margin: 10px;
+    border: 2px solid #8B4513;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    background-color: #8B4513;
+    color: white;
+    transform: scale(1.05);
+}
+
+h1 {
+    font-family: 'Impact', 'Arial Black', 'Helvetica Bold', sans-serif;
+    font-size: 3.5rem;
+    color: #8B4513;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+    letter-spacing: 3px;
+    margin-bottom: 30px;
+    background: linear-gradient(45deg, #FFD700, #FFA500, #FF6347);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    animation: glow 2s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+    from {
+        text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5), 0 0 10px rgba(128, 128, 128, 0.5);
+    }
+    to {
+        text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5), 0 0 20px rgba(128, 128, 128, 0.8), 0 0 30px rgba(64, 64, 64, 0.6);
+    }
+}
+
+p {
+    margin: 15px 0;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    word-spacing: 3px;
+}
+    </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="box">
+        <h1>The Grand Finale🚀🚀🚀🚀</h1>
+        <p>You carefully wade through the river and enter the cave.</p>
+        <p>Far from a monster's lair, you discover a vast cavern glowing with brilliant, natural gold formations.</p>
+        <p>An ancient, unseen presence communicates that this is the true heart of the lost city—a magnificent, natural wonder.</p>
+        <p>You return with the wisdom that some treasures were never meant for plunder, but for awe.</p>
+        <img src="7.png">
+    </body>
+</html>
